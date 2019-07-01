@@ -2,27 +2,27 @@
   <div class="wrapper">
     <!-- Navbar -->
     <div class="header">
-      <router-link style="color: #b7b6ba;" to="/">Home</router-link>
-      <router-link style="color: #b7b6ba;" to="/About">About</router-link>
+      <ul>
+        <li>
+          <router-link class="router" to="/">Home</router-link>
+        </li>
+        <li>
+          <router-link class="router" to="/About">About</router-link>
+        </li>
+      </ul>
     </div>
     <!-- Site body -->
       <div class="main">
         <div class="contact">
-          <h2> i'm on github dasdadasdasdadasdaadasdadasdad
-            dadasdadasdadasdsdasdasd
-            asdadasda
-          </h2>
-          <h4>Email: contato.wxkz@gmail.com</h4>
-          <a href="https://github.com/wxkz">GitHub</a>
-          <a href="https://ca.linkedin.com/in/marcelo-rodrigues-campos-5b338418a?trk=people-guest_profile-result-card_result-card_full-click">Linkedin</a>
+          <h2>Send me a message at contato.wxkz@gmail.com, or you can also find me at <a href="https://github.com/wxkz">GitHub</a> and <a href="https://ca.linkedin.com/in/marcelo-rodrigues-campos-5b338418a?trk=people-guest_profile-result-card_result-card_full-click">Linkedin</a>.</h2>
         </div>
       </div>
   </div>
 </template>
 
 <style scoped>
-h1, h2, h3, h4, a {
-  color: #b7b6ba;
+h1, h2, h3, h4, a, li {
+  color: white;
 }
 
 .wrapper {
@@ -38,14 +38,36 @@ h1, h2, h3, h4, a {
 }
 
 .header {
-  background: rgba(0, 67, 92, 0.8);
+  border-style: ridge;
+  border-color: white;
+  background: rgba(179, 4, 4, 0.9);
+}
+
+.header > ul {
+  float: left;
+  display: inline-flex;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+.router {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px;
+  text-decoration: none;
+}
+.router:hover {
+  background-color:rgba(223, 93, 93, 0.9);
 }
 
 .main {
   margin: 10px;
+  border-color: white;
   border-style: ridge;
   text-align: left;
-  background: rgba(0, 67, 92, 0.4);
+  background: rgba(179, 4, 4, 0.8);
 }
 
 @media all and (min-width: 800px) {
