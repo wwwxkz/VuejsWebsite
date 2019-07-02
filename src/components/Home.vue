@@ -27,9 +27,9 @@
         </div>
         <div class="projects">
           <h2>Projects</h2>
-          <div v-for="repository in repositories" :key="repository.id">
-            <h4>{{ repository.name }}</h4>
-            <h4>{{ repository.description }}</h4>
+          <div style="margin:10px;background-color:rgba(223, 93, 93, 0.9);border-style:ridge;border-color:white;" v-for="(repository, index) in repositories" :key="index">
+            <h3 style="margin:10px;">{{ repository.name }}</h3>
+            <h4 style="margin:10px;">{{ repository.description }}</h4>
           </div>
         </div>
       </div>
@@ -204,9 +204,7 @@ body {
 
     created(){
       axios.get('https://api.github.com/users/wxkz/repos').then((response) => {
-        //alert(response.data[0]['name']);
-        //alert(response.data[0]['description']);
-        this.repositories = response;
+        this.repositories = response.data;
       })
     }
   
