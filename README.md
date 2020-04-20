@@ -1,3 +1,3 @@
 # Vuejs Website
 
-![](https://github.com/wxkz/Vuejs-Website/blob/master/README/gif.gif)
+![](https://github.com/wwwxkz/Vuejs-Website/blob/master/README/gif.gif)
